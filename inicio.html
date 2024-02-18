@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+
+  <link rel="icon" type="image/jpg" href="/assets/img/index.svg" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+    integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;600&display=swap" rel="stylesheet">>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="/assets/styles/inicio.css">
+</head>
+
+<body class="vh-100">
+
+  <!-- NAVBAR -->
+  <div class="nav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark-z fixed-top">
+
+      <div class="container">
+        <!-- logo -->
+
+        <a class="navbar-brand" href="#">
+          <img src="/assets/img/index.svg" alt="Logo" width="100" height="35" class="d-inline-block align-text-top">
+        </a>
+        <!-- Menu Responsive -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Sidebar -->
+
+        <div class=" sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel">
+
+          <div class="offcanvas-header text-white border-bottom">
+
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+
+          </div>
+
+          <!-- Cuerpo sidebar -->
+
+          <div class="offcanvas-body d-flex flex-column flex-lg-row p-lg-0 ">
+
+            <ul class="navbar-nav justify-content-center align-items-center  flex-grow-1 pe-3">
+
+              <li class="nav-item mx-2">
+                <a class="nav-link active" aria-current="page" href="/inicio.html">Inicio</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="/perfil.html">Mi Perfil</a>
+              </li>
+
+              <li class="nav-item mx-2">
+                <a class="nav-link" href="/pokedex.html">Pokedex</a>
+              </li>
+
+            </ul>
+
+            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center ">
+
+              <a href="" id="salir" class="text-white text-decoration-none px-3 py-1 rounded-4">
+
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                  class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                  <path fill-rule="evenodd"
+                    d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                  <path fill-rule="evenodd"
+                    d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                </svg>
+
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </div>
+
+    <!-- Seccion Titulo Se utiliza el SESSIONSTORAGE -->
+
+  <section class="container" style="margin-top: 70px;">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h3 class="text-capitalize" id="nombre"></h3>
+      </div>
+    </div>
+  </section>
+  <!-- Carrusel  -->
+  <section class="container" style="margin-top: 20px;">
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/assets/img/banner0.jpeg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/banner.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="/assets/img/bannerU.jpeg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- Acordeon -->
+
+  <section class="container" style="margin-top: 40px;">
+
+    <div class="accordion" id="accordionExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+            Descripción
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            <strong>Pokemon.</strong>
+            Pokémon (también abreviado <strong>PKMN; ポケットモンスター </strong>Pocket Monsters en japonés) es una franquicia de videojuegos que comenzó siendo de tipo RPG para las consolas de Nintendo creada por Satoshi Tajiri en 1995. Su éxito fue tal que abarcó otros géneros de videojuegos y campos del entretenimiento tales como una serie de anime, manga y una gran variedad de artículos de colección, como cartas del TCG, muñecos, etc.
+            Antes de la llegada de Pokémon Rojo y Azul a España, se publicó una revista llamada Los libros de Neko: Pocket Monster's, que avanzaba detalles sobre la franquicia. Actualmente Pokémon en España dispone de una revista llamada Pokémon: La revista oficial para todos los lectores, distribuida y publicada por Panini Revistas.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+            Historia
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            La historia de la franquicia Pokémon se expande más allá de una década desde que se empezó a trabajar oficialmente en el primer juego hasta ahora y tiene raíces incluso más antiguas. Empezó como el hobby de <strong> Satoshi Tajiri </strong>, quien desde niño disfrutaba cazando insectos y renacuajos en un bosque cerca de su casa, en el suburbano de <strong>Tokio</strong>. Pasado un tiempo ese bosque que visitaba fue destruido, y en base a aquel suceso Satoshi decidió poner en práctica su afición de capturar insectos porque quería que los niños disfrutasen tanto como él lo había hecho hasta aquel día. Gracias a la ayuda de <strong>Shigeru Miyamoto </strong>  consiguió que <strong> Nintendo</strong> valorara su proyecto que finalmente se comercializó el 27 de febrero de 1996. Después de ese día y debido al enorme éxito Nintendo continuó desarrollando juegos de Pokémon para la mayoría de sus plataformas.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Etimología
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+            La palabra <strong>Pokémon</strong> es la escritura con letras latinas de las japonesas: "ポケモン", que son una abreviatura de <strong>Poke</strong>tto <strong>Mon</strong>sutaa (escrito en katakana como ポケットモンスター), que a su vez proviene del inglés <strong> 'Pocket Monsters' </strong>, que quiere decir "monstruos de bolsillo". Esto viene del hecho de que los Pokémon se guardan en Poké Balls, las cuales se pueden encoger con lo que se pueden meter en el bolsillo. Además, originalmente, Pokémon fue lanzado para Game Boy, consola que cabe perfectamente en un bolsillo, que casualmente de preferencia al nombre de la serie, videojuego, juego de mesa, etc.
+
+            En inglés, la palabra se escribe Pokémon con tilde en acento agudo, a pesar de que este signo no existe en el uso habitual de este idioma. Esto se debe a que al unir las palabras Pocket Monster se obtuvo Poke-Mon. El problema es que según las normas del inglés, esto se pronunciaría como /pəʊk'mɑ:n/ (pouk mon). En muy pocos otros casos (como maté que se pronuncia /mátei/ y quiere decir mate) se puede poner en inglés un acento en la "e" para que esta se pronuncie, resultando así el nombre "Pokémon". En español se puede usar la transcripción rōmaji que prescinde del acento por razones ortográficas, si bien en el uso comercial habitualmente aparece usando la tilde.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+            ¿Qué son los Pokémon?
+          </button>
+        </h2>
+        <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            Los <strong>Pokémon</strong> (ポケモン <strong>Pokémon</strong> en japonés) son criaturas ficticias, que dependiendo de la especie o el tipo, pueden tener rasgos físicos parecidos a animales, plantas, rocas, fantasmas, o incluso humanos (aunque de tamaño en muchos casos muy superior a lo que mediría la especie a la que se parece). Poseen poderes fantásticos que pueden utilizar llevando a cabo movimientos o habilidades para atacar, defenderse o cumplir sus necesidades. Generalmente pueden vivir en todo tipo de entornos, subsistiendo en la libertad de la naturaleza o conviviendo con humanos y ayudándolos.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+            Vínculo entre humanos y Pokémon
+          </button>
+        </h2>
+        <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+          <div class="accordion-body">
+
+            Los Pokémon pueden desarrollar vínculos muy especiales con sus dueños, quienes pueden decidir qué hacer con ellos. Algunos tienen a los Pokémon como mascotas, para protegerse de otros Pokémon salvajes, para ayudarles en sus tareas domésticas1 o incluso para llevar a cabo trabajos2, y también hay quienes los utilizan para luchar contra los Pokémon de otras personas en combates Pokémon y medir su potencial3 (a quienes se les conoce como entrenadores Pokémon) o participar en concursos Pokémon y lucir sus cualidades (conocidos como coordinadores Pokémon).
+
+            Los humanos pueden capturar Pokémon con las Poké Balls, que poseen una misteriosa energía que permite introducir a un Pokémon dentro de un espacio muy reducido y permitir transportarlos cómodamente. De ahí lo de monstruos de bolsillo4. Sin embargo, para que el Pokémon sea introducido en la Poké Ball generalmente hay que entablar un combate con él para cansarlo o debilitarlo lo suficiente como para que sea capturado. Una vez capturado, el Pokémon puede salir o ser devuelto a su Poké Ball a voluntad del entrenador, pero si el Pokémon es muy testarudo y poco obediente podría escaparse por sí mismo o negarse a entrar.
+
+            El vínculo entre humanos y Pokémon solo puede entenderse como de mutuo acuerdo y en la que ambos sacan beneficio. Si bien en el momento de ser capturado, el Pokémon sea reacio a estar con su entrenador, con el tiempo y el trato diario entre ambos se pueden generar estrechos vínculos de amistad. A partir del comienzo de este vínculo, el Pokémon puede aumentar su mentalidad y su fuerza, sintiéndose así más a gusto consigo mismo, o con la compañía de un humano al que tenga aprecio. Un Pokémon no puede ser malvado por combatir. Combatir es poner a prueba la fuerza y sabiduría que se comparte entre humano y Pokémon.
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <script src="assets/js/inicio.js"></script>
+</body>
+
+</html>

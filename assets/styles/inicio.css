@@ -1,0 +1,32 @@
+:root {
+    --dark:  #18324D;
+    --dark-x:#244D75; 
+    --light: #ffffff;
+    --dark-y: #499AEB;
+    --dark-z:   #749c94 ;
+  }
+
+  body {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    /* background-color:  	rgba(204, 236, 236, 1)  !important; */
+  }
+
+.bg-dark-z{
+    background-color: #1A8F8F !important; 
+}
+
+
+.text-light{
+    color: var(--light) !important; 
+}
+
+.text-light:hover{
+    color: var(--dark-y) !important;
+}
+
+@media(max-width: 991px){
+  .sidebar{
+    background-color: var(--dark-x) !important ;
+  }
+}
