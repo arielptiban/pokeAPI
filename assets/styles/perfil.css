@@ -1,0 +1,54 @@
+
+:root {
+    --dark:  #18324D;
+    --dark-x:#244D75; 
+    --light: #ffffff;
+    --dark-y: #499AEB;
+  }
+  
+  body {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--light);
+  }
+
+
+  
+  .text-dark { 
+    color: black !important; 
+  }
+  
+  .bg-dark { 
+    background-color: #1A8F8F !important; 
+  }
+  
+  .bg-dark-x { 
+    background-color:#87A49F; 
+  }
+  
+  .btn {
+    min-height: 3.125rem;
+    font-weight: 600;
+  
+  }
+  
+  .form-control {
+    min-height: 3.125rem;
+    line-height: initial;
+    color: var(--light);
+  }
+  
+  
+  .form-control:focus {
+    outline: none;
+    color: var(--light);
+    border-color: var(--dark-y);
+    box-shadow: 0 0 10px var(--dark-y);
+    
+  }
+  
+  .btn:focus {
+    border-color: var(--dark-y);
+    box-shadow: 0 0 10px var(--dark-y);
+  }
+  
