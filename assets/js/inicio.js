@@ -11,6 +11,8 @@ nombre.innerHTML = `Bienvenido <strong> ${usuario}</strong>`
 
 let salir = document.getElementById('salir')
 
+//cerrar sesión
+
 salir.addEventListener('click', cerrar);
 
 function cerrar() {

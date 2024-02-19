@@ -1,4 +1,7 @@
-
+//controlando rutas
+if(!sessionStorage.getItem('correo')){
+    window.location.href = './login.html'
+}
 
 // CONSUMIR API POKEMON
 
@@ -52,6 +55,8 @@ function llenaPokemon(poke) {
 
 }
 
+//botones para mostrar pokemon por su tipo
+
 const botonesHeader = document.querySelectorAll(".btn-header");
 
 botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
@@ -77,6 +82,8 @@ botonesHeader.forEach(boton => boton.addEventListener("click", (event) => {
     }
 }))
 
+
+// cerrar sesión
 
 let salir = document.getElementById('salir')
 
