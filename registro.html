@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" type="image/jpg" href="/assets/img/index.svg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/styles/registro.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</head>
+
+<body>
+
+    <div class="d-flex flex-column justify-content-center align-items-center col-lg bg-dark-x min-vh-100">
+
+        <div class="col-lg-5 px-lg-5 py-lg-4 bg-dark ">
+
+            <h1 class="font-weight-bold mb-4 ">Regístrate para iniciar sesión</h1>
+
+            <form class="mb-5 row g-2" id="form">
+
+
+                <div class="mb-4">
+
+                    <label for="nombres" class="form-label font-weight-bold">Nombres</label>
+                    <input type="text" class="form-control bg-dark-x border-0" id="nombres"
+                        placeholder="Ingresa tus nombres">
+
+                </div>
+
+                <div class="mb-4 ">
+
+                    <label for="apellidos" class="form-label font-weight-bold">Apellidos</label>
+                    <input type="text" class="form-control bg-dark-x border-0" id="apellidos"
+                        placeholder="Ingresa tus apellidos">
+
+                </div>
+
+                <div class="mb-4">
+
+                    <label for="correo" class="form-label font-weight-bold">Correo</label>
+                    <input type="email" class="form-control bg-dark-x border-0" id="correo"
+                        placeholder="Ingresa tu correo">
+
+                </div>
+
+                <div class="mb-4 col-md-6">
+
+                    <label for="contrasena" class="form-label font-weight-bold">Contraseña</label>
+                    <input type="password" class="form-control bg-dark-x border-0 mb-2"
+                        placeholder="Ingresa tu contraseña" id="contrasena">
+
+                </div>
+
+                <div class="mb-4 col-md-6">
+
+                    <label for="Rcontrasena" class="form-label font-weight-bold">Repetir contraseña</label>
+                    <input type="password" class="form-control bg-dark-x border-0 mb-2"
+                        placeholder="Repite tu contraseña" id="Rcontrasena">
+
+                </div>
+
+                <button type="button" class="btn btn-primary w-100">Registrar</button>
+
+
+            </form>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
